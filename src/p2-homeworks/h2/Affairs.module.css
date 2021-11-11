@@ -1,0 +1,18 @@
+.taskName {
+    font-size: 20px;
+    color: white;
+}
+.priorityName {
+    font-size: 20px;
+    color: white;
+}
+.taskBlock {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-between;
+    
+}
+

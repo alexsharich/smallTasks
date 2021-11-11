@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url('https://cdnn21.img.ria.ru/images/20546/34/205463442_0:90:947:622_600x0_80_0_0_ec413e186f7294d2f6584f72b4f69350.jpg');
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.tasksContainer {
+    background-color: rgba(149, 82, 151, 0.7);
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.buttonRemote {
+margin: 20px;
+background-color: rgb(168, 31, 247);
+color: white;
+padding: 5px;
+}
+.deleteTaskButton {
+background-color: rgb(252, 89, 61);
+color: white;
+}
+.active {
+    margin: 20px;
+background-color: rgb(31, 247, 42);
+color: white;
+padding: 5px;
+}
