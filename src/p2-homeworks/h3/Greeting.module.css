@@ -1,7 +1,31 @@
 .someClass {
 
 }
-
 .error {
     border: 1px solid red;
+}
+.errorMessage {
+    color: red;
+}
+.totalUserStyle {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 3px;
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    color: rgb(226, 235, 226);
+    font-size: 25px;
+}
+.addUserButton {
+    background-color: rgb(36, 248, 100);
+    color: white
+}
+.disabledButton {
+    background-color: red;
+    color: rgb(226, 235, 226);
+}
+.inputButtonBlock {
+    margin-left: 50px;
 }

@@ -1,26 +1,29 @@
-import React from 'react'
+import React, { ChangeEvent, KeyboardEvent } from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
-    name: any // need to fix any
-    setNameCallback: any // need to fix any
+    name: string // need to fix any
+    setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void // need to fix any
     addUser: any // need to fix any
-    error: any // need to fix any
-    totalUsers: any // need to fix any
+    error: boolean | null // need to fix any
+    totalUsers: number // need to fix any
+    disabledButton: boolean
+    onKeyPress: (e: KeyboardEvent<HTMLInputElement>) => void
 }
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
+    { onKeyPress, name, setNameCallback, addUser, error, totalUsers, disabledButton } // деструктуризация пропсов
 ) => {
     const inputClass = s.error // need to fix with (?:)
 
     return (
-        <div>
-            <input value={name} onChange={setNameCallback} className={inputClass}/>
+        <div className={s.inputButtonBlock}>
+            <input value={name} onKeyPress={onKeyPress} onChange={setNameCallback} className={inputClass} />
             <span>{error}</span>
-            <button onClick={addUser}>add</button>
-            <span>{totalUsers}</span>
+            <span className={s.totalUserStyle}>{totalUsers}</span>
+            <button className={disabledButton === true ? s.disabledButton : s.addUserButton} onClick={addUser} disabled={disabledButton}>add</button>{error && <div className={s.errorMessage}>Please,write the text</div>}
+
         </div>
     )
 }
