@@ -1,0 +1,28 @@
+.link {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+.link:hover {
+    color: crimson;
+}
+.active {
+    color: darkblue;
+}
+.block {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    background: rgb(38, 231, 31);
+}
+.header {
+    display: flex;
+    width: 280px;
+    flex-direction: row;
+    transition-duration: 500ms;
+    transform: translate(-225px);
+}
+.header:hover {
+    transition-duration: 500ms;
+    transform: translate(0);
+}
