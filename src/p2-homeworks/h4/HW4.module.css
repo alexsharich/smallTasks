@@ -1,13 +1,22 @@
 .blue {
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid rgb(118, 118, 255);
 }
 
 .column {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 .testSpanError {
-    color: blue;
+    color: rgb(106, 253, 125);
+}
+.HWBlock {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: rgba(14, 13, 13, 0.7);
+    border-radius: 5px;
 }

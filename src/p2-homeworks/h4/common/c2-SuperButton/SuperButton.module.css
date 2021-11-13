@@ -1,7 +1,16 @@
+
 .default {
-
+background: violet;
+color: rgb(66, 10, 10);
+outline: none;
 }
-
 .red {
-    background: red;
+    background: rgb(253, 53, 53);
+    color: white;
+}
+.button{
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
 }
