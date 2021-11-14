@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Affairs from './Affairs'
+import s from './HW2.module.css'
 
 // types
 export type AffairPriorityType = 'low' | 'middle' | 'high'
@@ -54,10 +55,10 @@ function HW2() {
     } // need to fix any
 
     return (
-        <div >
-            <hr />
-            homeworks 2
-            <div className='tasksContainer'>
+        <div className='HWBlock'>
+           
+            <h3>homeworks 2</h3>
+            <div className={s.tasksContainer}>
                 {/*should work (должно работать)*/}
                 <Affairs
                     filter={filter}
@@ -66,12 +67,12 @@ function HW2() {
                     deleteAffairCallback={deleteAffairCallback}
                 />
 
-                <hr />
+              
                 {/*для личного творчества, могу проверить*/}
                 {/*<AlternativeAffairs/>*/}
             </div>
 
-            <hr />
+        
         </div>
     )
 }

@@ -50,10 +50,9 @@ function HW1() {
         }
     }
     return (
-        <div>
-            <hr />
-            homeworks 1
+        <div className='HWBlock'>
 
+            <h3>homework 1</h3>
             {/*should work (должно работать)*/}
 
             {
@@ -72,10 +71,10 @@ function HW1() {
             </div>
 
 
-            <hr />
+
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeMessage/>*/}
-            <hr />
+
         </div>
     )
 }

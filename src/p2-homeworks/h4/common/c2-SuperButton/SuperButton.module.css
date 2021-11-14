@@ -3,6 +3,11 @@
 background: violet;
 color: rgb(66, 10, 10);
 outline: none;
+transition: .5s linear all;
+}
+.default:hover {
+    background: rgb(79, 248, 93);
+    transition:.5s;
 }
 .red {
     background: rgb(253, 53, 53);
@@ -13,4 +18,9 @@ outline: none;
     margin: 10px;
     cursor: pointer;
     overflow: hidden;
+}
+.testStyle {
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
 }

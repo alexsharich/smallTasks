@@ -1,0 +1,11 @@
+.span {
+    display:flex;
+    height: 31px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.HW6Block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

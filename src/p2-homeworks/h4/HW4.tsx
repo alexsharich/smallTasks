@@ -20,10 +20,10 @@ function HW4() {
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
 
     return (
-        <div >
-            <hr />
-            homeworks 4
-            <div className={s.HWBlock}>
+        <div className='HWBlock'>
+           
+             <h3>homeworks 4</h3>
+            <div className={s.HW4Block}>
                 <div className={s.column}>
                     <SuperInputText
                         value={text}
@@ -69,12 +69,12 @@ function HW4() {
             </div>
 
 
-            <hr />
+           
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperInputText/>*/}
             {/*<AlternativeSuperButton/>*/}
             {/*<AlternativeSuperCheckbox/>*/}
-            <hr />
+           
         </div >
     )
 }

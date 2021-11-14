@@ -5,7 +5,7 @@ import Routes from './Routes'
 
 function HW5() {
     return (
-        <div>
+        <div className="HWBlock">
             {/*в gh-pages лучше работает HashRouter*/}
             <HashRouter>
 

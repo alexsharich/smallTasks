@@ -13,10 +13,11 @@
 .testSpanError {
     color: rgb(106, 253, 125);
 }
-.HWBlock {
-    width: 500px;
+.HW4Block {
+    width: 400px;
     height: 300px;
     margin: 0 auto;
     background-color: rgba(14, 13, 13, 0.7);
     border-radius: 5px;
+    padding: 20px;
 }

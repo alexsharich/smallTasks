@@ -13,7 +13,7 @@ type GreetingContainerPropsType = {
 // более современный и удобный для про :)
 // уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({ users, addUserCallback }) => { // деструктуризация пропсов
-    const [name, setName] = useState<string>('') // need to fix any
+    const [name, setName] = useState<string>('0') // need to fix any
     const [error, setError] = useState<boolean | null>(null) // need to fix any
     const [disabledButton, setDisabledButton] = useState<boolean>(true)
 
@@ -43,7 +43,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({ users, addUse
     }
 
 
-    const totalUsers = users.length - 1 // need to fix
+    const totalUsers = users.length  // need to fix
 
     return (
         <Greeting

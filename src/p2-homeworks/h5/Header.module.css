@@ -20,7 +20,8 @@
     width: 280px;
     flex-direction: row;
     transition-duration: 500ms;
-    transform: translate(-225px);
+    transform: translate(0);
+    margin: 50px;
 }
 .header:hover {
     transition-duration: 500ms;
