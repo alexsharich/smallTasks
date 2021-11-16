@@ -6,12 +6,12 @@
     cursor: pointer;
     appearance: none;
     background-color: cadetblue;
-    border: 2px solid wheat;
-    color: tomato;
+    border: 2px solid rgb(14, 80, 54);
+    color: rgb(245, 239, 236);
 }
 .select:focus {
     outline: none;
-    border: violet;
+    border: rgb(0, 24, 8);
 }
 .option {
     background-color: rgb(19, 68, 68);
@@ -20,6 +20,7 @@
 .option:checked {
     background-color: slateblue;
     color: snow;
+    border: indigo;
 }
 .option:hover {
     background-color: steelblue;

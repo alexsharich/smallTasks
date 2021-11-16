@@ -8,13 +8,14 @@
     background-color: honeydew;
 }
 .radio:hover {
-    border: 2px solid green;
+    border: 2px solid rgb(18, 153, 18);
 }
 .radio:checked {
-    background-color: rgb(72, 59, 250);
+    background-color: cadetblue;
+    border: 2px solid rgb(14, 80, 54);
 }
 .radio:focus {
-    background-color: rgb(17, 32, 245);
+    background-color: rgb(128, 252, 155);
 }
 .label{
     cursor: pointer;
