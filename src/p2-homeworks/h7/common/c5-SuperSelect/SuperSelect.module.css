@@ -1,0 +1,27 @@
+.select { 
+    width: 100px;
+    padding: 5px;
+    padding-right: 30px;
+
+    cursor: pointer;
+    appearance: none;
+    background-color: cadetblue;
+    border: 2px solid wheat;
+    color: tomato;
+}
+.select:focus {
+    outline: none;
+    border: violet;
+}
+.option {
+    background-color: rgb(19, 68, 68);
+    color: tomato;
+}
+.option:checked {
+    background-color: slateblue;
+    color: snow;
+}
+.option:hover {
+    background-color: steelblue;
+    color: white;
+}
