@@ -5,7 +5,7 @@ function HW9() {
     return (
         <div className="HWBlock">
           
-            <h3>homeworks 9 </h3>
+            <h3>homeworks 9</h3>
 
             {/*should work (должно работать)*/}
             <Clock/>
