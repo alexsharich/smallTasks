@@ -1,9 +1,10 @@
 import React from "react";
 
-type ActionType = SendACType
+type ActionType = SendACType | ErrorACType
 
 const initState = {
-    checked: true
+    checked: true,
+    error: ''
 }
 
 export const reducerSend = (state = initState, action: ActionType) => {
@@ -12,6 +13,12 @@ export const reducerSend = (state = initState, action: ActionType) => {
             return {
                 ...state,
                 checked: action.checked
+            };
+        }
+        case "ERROR": {
+            return {
+                ...state,
+                error: action.error
             };
         }
         default: return state;
@@ -25,5 +32,15 @@ export const SendAC = (checked: boolean) => {
     return {
         type: 'SEND',
         checked: checked
+    }
+}
+type ErrorACType = {
+    type: 'ERROR',
+    error: string
+}
+export const ErrorAC = (error: string) => {
+    return {
+        type: 'ERROR',
+        error: error
     }
 }

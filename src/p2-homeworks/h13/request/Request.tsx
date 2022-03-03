@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { AppStoreType } from "../../h10/bll/store";
 import SuperButton from "../../h4/common/c2-SuperButton/SuperButton";
 import SuperCheckbox from "../../h4/common/c3-SuperCheckbox/SuperCheckbox";
-import { SendAC } from "../bll/Reducer";
+import { ErrorAC, SendAC } from "../bll/Reducer";
 import { todolistAPI } from "../requestAPI/RequestAPI";
 
 /* type RequestPropsType = {
@@ -22,6 +22,13 @@ export const Request = () => {
 
     const onClickHandler = () => {
         todolistAPI.send(checked)
+            .then(res => {
+                dispatch(SendAC(res.data.yourBody.success))
+                dispatch(ErrorAC(''))
+            })
+            .catch(error => {
+                dispatch(ErrorAC(error.message))
+            })
     }
 
 
